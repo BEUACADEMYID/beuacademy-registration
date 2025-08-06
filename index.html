@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Pendaftaran | BeUAcademy.id</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to bottom, #f9f5f0, #e6d3c0);
+      font-family: 'Open Sans', sans-serif;
+      color: #4a3f35;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff7f0;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 0 30px rgba(139, 69, 19, 0.15);
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 20px;
+      max-width: 120px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+
+    label {
+      font-weight: 600;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      margin-bottom: 20px;
+      border: 1px solid #d3c4b3;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #a47c5c;
+      color: #fff;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+
+    button:hover {
+      background-color: #8c684b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://yourdomain.com/logo.png" alt="Logo BeUAcademy" class="logo">
+    <h2>Pendaftaran Eksklusif BeUAcademy.id</h2>
+    <form action="https://formspree.io/f/xxxxx" method="POST">
+      
+      <label>Nama Lengkap:</label>
+      <input type="text" name="nama" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Instagram:</label>
+      <input type="text" name="instagram" required>
+
+      <label>Domisili:</label>
+      <input type="text" name="domisili" required>
+
+      
+      <label>Apa yang membuat kamu tertarik daftar ke BeUAcademy?</label>
+      <textarea name="alasan_daftar" rows="3" required></textarea>
+
+      <label>Apa yang ingin kamu selesaikan bersama BeUAcademy?</label>
+      <textarea name="goal_bersama" rows="3" required></textarea>
+
+      <button type="submit">Daftar Sekarang</button>
+    </form>
+  </div>
+</body>
+</html>
