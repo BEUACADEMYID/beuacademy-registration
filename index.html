@@ -1,27 +1,103 @@
-<div class="container">
-  <img src="https://raw.githubusercontent.com/BEUACADEMYID/beauacademy-registration/main/lambang.png" alt="Logo BeUAcademy" class="logo">
-  <h2>Pendaftaran Eksklusif BeUAcademy.id</h2>
-  
- <form action="https://formspree.io/f/mrblyyao" method="POST">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pendaftaran BeUAcademy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f5e8dc; /* warna coklat cream */
+      margin: 0;
+    }
 
-   <label>Nama Lengkap:</label>
-    <input type="text" name="nama" required>
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
 
-    <label>Email:</label>
-    <input type="email" name="email" required>
+    .logo {
+      display: block;
+      max-width: 120px;
+      margin: 0 auto 20px;
+    }
 
-    <label>Instagram:</label>
-    <input type="text" name="instagram" required>
+    h2 {
+      text-align: center;
+      color: #3b2a1e;
+      margin-bottom: 25px;
+    }
 
-    <label>Domisili:</label>
-    <input type="text" name="domisili" required>
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #333;
+    }
 
-    <label>Apa yang membuat kamu tertarik daftar ke BeUAcademy?</label>
-    <textarea name="alasan_daftar" rows="3" required></textarea>
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #fff8f0;
+    }
 
-    <label>Apa yang ingin kamu selesaikan bersama BeUAcademy?</label>
-    <textarea name="goal_bersama" rows="3" required></textarea>
+    textarea {
+      resize: vertical;
+    }
 
-    <button type="submit">Daftar Sekarang</button>
-  </form>
-</div>
+    button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      background-color: #4d3627;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #3b2a1e;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://raw.githubusercontent.com/BEUACADEMYID/beauacademy-registration/main/lambang.png" alt="Logo BeUAcademy" class="logo">
+    <h2>Pendaftaran Eksklusif BeUAcademy.id</h2>
+    
+    <form action="https://formspree.io/f/mrblyyao" method="POST">
+      <label>Nama Lengkap:</label>
+      <input type="text" name="nama" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Instagram:</label>
+      <input type="text" name="instagram" required>
+
+      <label>Domisili:</label>
+      <input type="text" name="domisili" required>
+
+      <label>Apa yang membuat kamu tertarik daftar ke BeUAcademy?</label>
+      <textarea name="alasan_daftar" rows="3" required></textarea>
+
+      <label>Apa yang ingin kamu selesaikan bersama BeUAcademy?</label>
+      <textarea name="goal_bersama" rows="3" required></textarea>
+
+      <button type="submit">Daftar Sekarang</button>
+    </form>
+  </div>
+</body>
+</html>
