@@ -81,23 +81,27 @@
 
 <div class="container">
   <h2>Isi Formulir untuk Booking Slot Bulan Ini</h2>
-  <form action="thankyou.html" method="POST">
+  
+  <form action="https://formspree.io/f/mrblyvao" method="POST">
+    <!-- Redirect otomatis ke thankyou.html -->
+    <input type="hidden" name="_redirect" value="thankyou.html">
+
     <label for="nama">Nama Lengkap</label>
     <input type="text" id="nama" name="nama" required />
 
     <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+    <input type="email" id="email" name="_replyto" required />
 
     <label for="usia">Usia</label>
     <input type="number" id="usia" name="usia" min="17" required />
 
     <label for="ig">Instagram:</label>
-      <input type="text" id="ig" name="instagram" required />
+    <input type="text" id="ig" name="instagram" required />
 
     <label for="domisili">Domisili:</label>
-      <input type="text" id="domisili" name="domisili" required />
+    <input type="text" id="domisili" name="domisili" required />
 
-    <label for="LAYANAN ">layanan apa yang ingin dipilih??</label>
+    <label for="LAYANAN">Layanan apa yang ingin dipilih?</label>
     <select id="layanan" name="layanan" required>
       <option value="">Pilih...</option>
       <option value="Early Career Consultation: For early adopters and beginners">career early</option>
@@ -110,7 +114,7 @@
     <textarea id="alasan" name="alasan" rows="4" required></textarea>
 
     <label for="tujuan">Apa yang ingin kamu selesaikan bersama BeUAcademy?</label>
-      <textarea id="tujuan" name="goal_bersama" rows="3" required></textarea>
+    <textarea id="tujuan" name="goal_bersama" rows="3" required></textarea>
 
     <button type="submit">Book Slot Bulan Ini</button>
   </form>
